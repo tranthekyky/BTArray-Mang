@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 5: Viết một chương trình nhập vào 2 chuỗi,
+    sau đó kiểm tra xem hai chuỗi có giống nhau hay không.
+    <script>
+        let chuoi1 = prompt("Nhập chuỗi 1");
+        let chuoi2 = prompt("Nhập chuỗi 2");
+        // Chuyển 2 chuỗi thành 2 array , có điẻm chung là dấu cách để cắt  .
+        let arrChuoi1 = chuoi1.split("");
+        let arrChuoi2 = chuoi2.split("");
+        let flag = false;
+        let j = 0;
+        if (chuoi1.length === chuoi2.length) {
+            for (let i = 0; i < chuoi2.length; i++) {
+                if (chuoi1.charAt(i) === chuoi2.charAt(0 + j)) {
+                    j++;
+                    flag = true;
+                    break;
+                } else {
+                    flag = false;
+                }
+            }
+
+        } else {
+            flag = false;
+        }
+        if (flag = false) {
+            console.log("Hai chuỗi không giống nhauu ");
+        } else {
+            console.log("Hai chuỗi giống nhauu ");
+        }
+    </script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 6: Viết chương trình nhập vào một mảng ký tự,
+    tìm tất cả các ký tự trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+
+    <script>
+        let kitu = ["*", "-", "/", "_", "#", "!", "-"];
+        //Từ mảng kí tự chuyển sảng chuỗi kí tự dùng tostring
+        let chuoiKitu = kitu.toString();
+        console.log(chuoiKitu);
+        //Muốn đổi kí tự chuỗi dùng replace để đè phần tử muốn thay đổi 
+        console.log(chuoiKitu.replace("-", "_"));
+        //kết quả trên chỉ thay đổi được phần tử đầu tiền tìm thay 
+        // muốn thay đổi hết thì mình phải đổi giá trị đầu tiên thành biểu thức chính quy như sau :
+        console.log(chuoiKitu.replace(/-/g, "_"));
+        //và lưu ý sau khi đổi thành biểu thưsc chính quy thi bỏ dấu "" 
+
+    </script>
+</body>
+
+</html>

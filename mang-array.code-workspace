@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../ham"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mang-array"
+	}
+}

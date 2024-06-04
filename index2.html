@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại có nằm trong mảng hay không. Nếu có
+    in ra vị trí của phần tử đó.
+    Trong trường hợp không tìm thấy thông báo không tìm thấy phần tử.
+    <script>
+        let eleMent = +prompt("Nhập số cần tim");
+        let arrNumber = [-2, 3, 4, 5, 15, -3, 16];
+        for (let i = 0; i <= arrNumber.length - 1; i++) {
+            if (arrNumber[i] === eleMent) {
+                console.log("vị trí của " + eleMent + " là : " + i);
+                break;
+            } else if (i === arrNumber.length - 1) {
+                console.log("Không tìm thấy phần tử này trong mảng !");
+            }
+
+        }
+    </script>
+</body>
+
+</html>

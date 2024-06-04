@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <span>Nhập từ muốn dịch : </span> <input type="text" placeholder="Nhập" id="valuee">
+    <input type="button" value="Tra từ điển" onclick="checkValue()">
+    <p id="result"></p>
+    <script>
+        function checkValue() {
+            let vietNam = ["Số một", "số hai", "số ba", "số bốn"];
+            let tiengAnh = ["one", "two", "three", "four"];
+            let valueInput = document.getElementById("valuee").value;
+            let result = "";
+            let index_vietNam = 0;
+            for (let i = 0; i < vietNam.length; i++) {
+                if (vietNam[i] === valueInput) {
+                    index_vietNam = i;
+                    for (let j = 0; j < tiengAnh.length; j++) {
+                        if (i === j) {
+                            result = tiengAnh[j];
+                        }
+                    }
+                }
+
+            }
+            document.getElementById("result").innerHTML = "Kết quả : " + result;
+
+        }
+    </script>
+</body>
+
+</html>

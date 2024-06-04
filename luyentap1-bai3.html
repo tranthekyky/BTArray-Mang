@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 3- Viết chương trình khởi tạo mảng số nguyên.
+    Hiển hiện giá trị lớn nhất trong mảng đó.
+    In ra giá trị trung bình của các phần tử trong mảng.
+
+    <script>
+        let numbers = [23, 41, 123, 54, 2, 31, 4, 8, -5, 10];
+        let total = 0;
+        let medium = 0;
+        for (let i = 0; i <= numbers.length - 1; i++) {
+            total += numbers[i];
+            medium = total / numbers.length;
+        }
+        console.log(total);
+        console.log(medium);
+
+    </script>
+
+</body>
+
+</html>

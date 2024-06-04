@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [12, 2, 65, 31, 6, 89, 34];
+        let max1 = numbers[0];
+        let max2 = numbers[0];
+        let index = 0;
+        for (let i = 0; i < numbers.length; i++) {
+            if (max1 < numbers[i]) {
+                max1 = numbers[i];
+                index = i;
+            }
+        }
+        console.log("Phần tử lớn thứ nhất : " + max1);
+        let numbers2 = numbers.splice(index, 1);
+        for (let j = 0; j < numbers.length; j++) {
+            if (max2 < numbers[j] && max2 < max1) {
+                max2 = numbers[j];
+            }
+        }
+        console.log(" phần thử lớn thứ 2 : " + max2);
+
+
+
+
+    </script>
+</body>
+
+</html>

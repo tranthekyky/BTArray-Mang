@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let number = +prompt("Nhập số có trong mảng ");
+        let n = 0;
+        let numbers = [1, 7, 5, 9, 2, 6, 7, 9, 7];
+        for (let i = 0; i <= numbers.length - 1; i++) {
+            // console.log("Phần tử : " + numbers[i]); - In ra các phần tử trong mảng.
+
+
+            // if (numbers[i] % 2 === 0) {
+            //     console.log("Phần tử chẳn là :" + numbers[i]); - In ra các phần tử chẵn trong mảng.
+
+            // }   
+
+
+            // if (i % 2 === 0) {
+            //     console.log("Phần tử tại vị trí chẳn :" + numbers[i]); - In ra các phần tử tại vị trí chẵn trong mảng.
+
+            // }
+
+            if (numbers[i] === number) {
+                n++;
+            }
+        }
+        console.log("Số " + number + " xuât hiện " + n + " lần trong mảng"); //  - Cho người dùng nhập vào 1 số và in ra số lần xuất hiện của số đó trong mảng.
+
+
+
+    </script>
+</body>
+
+</html>

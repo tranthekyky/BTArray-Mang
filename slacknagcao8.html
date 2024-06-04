@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 8 (Nâng cao): Tìm max đường chéo chính của ma trận trên
+    <script>
+        let arr = [
+            [10, 3, 4],
+            [3, 9, 12],
+            [5, 5, 14]
+        ];
+        let max = arr[0][0];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (i === j) {
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                    }
+                }
+
+            }
+        }
+        console.log(max);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử,
+    nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc mảng đã cho không,
+    nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+    và gán 0 cho phần tử cuối cùng của mảng)
+
+    <script>
+        let numbers = [23, -41, 123, 54, -2, 31, 4, 8, -5, -10];
+        let v = +prompt("Nhập v");
+        for (let i = 0; i < numbers.length; i++) {
+            if (v === numbers[i]) {
+                numbers.splice(i, 1);
+            }
+        }
+        console.log(numbers);
+
+    </script>
+
+</body>
+
+</html>
